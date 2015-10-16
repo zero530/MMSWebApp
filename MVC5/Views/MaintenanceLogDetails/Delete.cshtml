@@ -1,0 +1,232 @@
+﻿@model MMSWebApp.Models.MaintenanceLogDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MaintenanceLogDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OriginID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SMEID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SMEID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunctionArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunctionArea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.System)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.System)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SERNoTempNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SERNoTempNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Requested_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Requested_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Requested_By)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Requested_By)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Priority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Priority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Severity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Severity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estimated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estimated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActionedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActionedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BaselineStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BaselineStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BaselineFinish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BaselineFinish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RevisedStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevisedStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RevisedFinish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevisedFinish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualFinish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualFinish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActualMandays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActualMandays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdatedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImportDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImportDesc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

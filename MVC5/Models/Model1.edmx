@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MMSDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblSMEMatrix">
+          <Key>
+            <PropertyRef Name="SMEID" />
+          </Key>
+          <Property Name="SMEID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FunctionArea" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="System" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="APJSME1" Type="nvarchar" MaxLength="10" />
+          <Property Name="APJSME2" Type="nvarchar" MaxLength="10" />
+          <Property Name="APJSME3" Type="nvarchar" MaxLength="10" />
+          <Property Name="APJSME4" Type="nvarchar" MaxLength="10" />
+          <Property Name="MTRTeam" Type="nvarchar" MaxLength="10" />
+          <Property Name="MTRSME1" Type="nvarchar" MaxLength="10" />
+          <Property Name="MTRSME2" Type="nvarchar" MaxLength="10" />
+          <Property Name="MTRSME3" Type="nvarchar" MaxLength="10" />
+          <Property Name="MTRSME4" Type="nvarchar" MaxLength="10" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="MMSDBModelStoreContainer">
+          <EntitySet Name="tblSMEMatrix" EntityType="Self.tblSMEMatrix" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MMSDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblSMEMatrix">
+          <Key>
+            <PropertyRef Name="SMEID" />
+          </Key>
+          <Property Name="SMEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FunctionArea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="System" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="APJSME1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="APJSME2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="APJSME3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="APJSME4" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MTRTeam" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MTRSME1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MTRSME2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MTRSME3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="MTRSME4" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="MMSDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblSMEMatrix" EntityType="Self.tblSMEMatrix" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MMSDBModelStoreContainer" CdmEntityContainer="MMSDBEntities">
+          <EntitySetMapping Name="tblSMEMatrix">
+            <EntityTypeMapping TypeName="MMSDBModel.tblSMEMatrix">
+              <MappingFragment StoreEntitySet="tblSMEMatrix">
+                <ScalarProperty Name="SMEID" ColumnName="SMEID" />
+                <ScalarProperty Name="FunctionArea" ColumnName="FunctionArea" />
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="APJSME1" ColumnName="APJSME1" />
+                <ScalarProperty Name="APJSME2" ColumnName="APJSME2" />
+                <ScalarProperty Name="APJSME3" ColumnName="APJSME3" />
+                <ScalarProperty Name="APJSME4" ColumnName="APJSME4" />
+                <ScalarProperty Name="MTRTeam" ColumnName="MTRTeam" />
+                <ScalarProperty Name="MTRSME1" ColumnName="MTRSME1" />
+                <ScalarProperty Name="MTRSME2" ColumnName="MTRSME2" />
+                <ScalarProperty Name="MTRSME3" ColumnName="MTRSME3" />
+                <ScalarProperty Name="MTRSME4" ColumnName="MTRSME4" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

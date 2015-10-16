@@ -1,0 +1,105 @@
+﻿@model IEnumerable<MMSWebApp.Models.SMEMatrix>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FunctionArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.System)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APJSME1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APJSME2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APJSME3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APJSME4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MTRTeam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MTRSME1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MTRSME2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MTRSME3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MTRSME4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remark)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FunctionArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.System)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APJSME1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APJSME2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APJSME3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APJSME4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MTRTeam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MTRSME1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MTRSME2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MTRSME3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MTRSME4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remark)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MMSDBModelStoreContainer" CdmEntityContainer="MMSDBEntities">
+    <EntitySetMapping Name="tblSMEMatrix">
+      <EntityTypeMapping TypeName="MMSDBModel.tblSMEMatrix">
+        <MappingFragment StoreEntitySet="tblSMEMatrix">
+          <ScalarProperty Name="SMEID" ColumnName="SMEID" />
+          <ScalarProperty Name="FunctionArea" ColumnName="FunctionArea" />
+          <ScalarProperty Name="System" ColumnName="System" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="APJSME1" ColumnName="APJSME1" />
+          <ScalarProperty Name="APJSME2" ColumnName="APJSME2" />
+          <ScalarProperty Name="APJSME3" ColumnName="APJSME3" />
+          <ScalarProperty Name="APJSME4" ColumnName="APJSME4" />
+          <ScalarProperty Name="MTRTeam" ColumnName="MTRTeam" />
+          <ScalarProperty Name="MTRSME1" ColumnName="MTRSME1" />
+          <ScalarProperty Name="MTRSME2" ColumnName="MTRSME2" />
+          <ScalarProperty Name="MTRSME3" ColumnName="MTRSME3" />
+          <ScalarProperty Name="MTRSME4" ColumnName="MTRSME4" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
